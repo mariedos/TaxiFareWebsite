@@ -20,3 +20,4 @@ s3fs
 gcsfs
 google-cloud-storage
 termcolor
+streamlit
