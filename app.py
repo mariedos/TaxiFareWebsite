@@ -28,6 +28,6 @@ input_data= {"dropoff_latitude":[dropoff_latitude],
             "pickup_latitude":[pickup_latitude ],
             "pickup_longitude":[pickup_longitude]}
 
-response = requests.get("http://localhost:8080/predict_test", params = input_data)
+response = requests.get("http://taxifare.lewagon.ai/predict_fare/", params = input_data)
 
 st.markdown(f"<h1 style=‘color:#6369D1;text-align: center;’>{str(round(response.json()['prediction'],2))}</h1>", unsafe_allow_html=True)
