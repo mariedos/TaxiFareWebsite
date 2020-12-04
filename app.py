@@ -30,4 +30,4 @@ input_data= {"dropoff_latitude":[dropoff_latitude],
 
 response = requests.get("http://localhost:8080/predict_test", params = input_data)
 
-st.markdown("<h1 style=‘color:blue;text-align: center;’>"+str(round(response.json()['prediction'],2))+"</h1>", unsafe_allow_html=True)
+st.markdown(f"<h1 style=‘color:#6369D1;text-align: center;’>{str(round(response.json()['prediction'],2))}</h1>", unsafe_allow_html=True)
